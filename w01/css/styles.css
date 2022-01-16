@@ -5,14 +5,13 @@
 }
 body {
     margin: 0 auto;
-    padding: 0 auto;
 }
 header {
 display: grid;
 grid-template-columns: 1fr 4fr;
 text-align: center;
 color:wheat;
-background-color: forestgreen;
+background-color: #145214;
 
 padding: 20px;
 border-radius: 10px;
@@ -38,7 +37,7 @@ li {
     line-height: 40px;
 }
 footer {
-    background-color: forestgreen;
+    background-color: #145214;
     border-radius: 10px;
     color: wheat;
     padding: 1em;

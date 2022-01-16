@@ -1,6 +1,6 @@
 function getDate() {
     let d = new Date().getFullYear();
-    document.getElementById('outputspan').innerHTML = d;
+    document.getElementById('outputspan').innerText = d;
 }
 getDate();
 // () => {
@@ -9,6 +9,6 @@ getDate();
 // }
 function getModified() {
     let m = document.lastModified;
-    document.getElementById('lastmod').innerHTML = m;
+    document.getElementById('lastmod').innerText = m;
 }
 getModified();
