@@ -7,7 +7,7 @@
 
 header{
     color: rgb(255, 160, 125);
-    background-color: rgb(39, 73, 146);
+    background-color: #162955;
     padding: 1em;
     margin-bottom: 1em;
     border: 2px solid black;
@@ -24,7 +24,7 @@ main{
 .card {
     border: 2px solid black;
     border-radius: 10px;
-    color: rgb(39, 73, 146);
+    color: #162955;
     background-color: rgb(255, 160, 125);
     overflow: hidden;
     
@@ -32,7 +32,7 @@ main{
 
 .card h2{
     color: rgb(255, 160, 125);
-    background-color: rgb(39, 73, 146);
+    background-color: #162955;
 }
 
 .card * {
@@ -47,7 +47,7 @@ img{
 }
 
 footer{
-    background-color: rgb(39, 73, 146);
+    background-color: #162955;
     color: rgb(255, 160, 125);
     border: 2px solid black;
     border-radius: 10px 10px 0px 0px;
