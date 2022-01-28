@@ -1,0 +1,74 @@
+* {
+    margin: auto;
+    max-width: 900px;
+}
+
+header {
+    background-color: blanchedalmond;
+    border: 2px dotted black;
+    border-radius: 7px;
+    padding: 2em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* main>p {
+    font-size: 2em;
+} */
+
+nav a,
+p, form {
+    font-size: 1.25em;
+}
+
+main p {
+    color: sienna;
+}
+
+section {
+    display: flex;
+    flex: 1 1 500px;
+    flex-flow: row wrap;
+}
+
+section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    min-height: 200px;
+    text-align: center;
+    background-color: skyblue;
+    margin: 10px;
+}
+/* Demonstrate pseudo classes. */
+
+/* div:first-child {
+    background-color: steelblue;
+} */
+
+/* Can be used in combination with other selectors */
+/* div:first-child p{
+    color:blanchedalmond;
+} */
+/* Lots of pseudo options are available, a comprehensive list can be found at  https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes*/
+
+/* nav a:visited {
+    color: black;
+} */
+
+input[type='radio']:checked {
+    margin-bottom: 3px;
+    border: 1px solid blue;
+}
+
+footer {
+    margin: 2em;
+    background-color: blanchedalmond;
+    padding: 2em;
+    border: 2px dotted black;
+    border-radius: 7px;
+}
