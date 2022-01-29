@@ -54,15 +54,32 @@ header div:first-child a:first-child img {
     margin: 0;
 }
 
-.todaydate {
+#todaydate {
     height: 2em;
     width: 90%;
     border: 1px solid #083d77;
-    color: #083d77
+    color: #083d77;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
     display: none;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    color: #EEE9E5;
+    line-height: 42px;
+    text-decoration: none;
+    background-color: #514A39;
+}
+
+nav a:hover {
+    color: #514A39;
+    background-color: #EEE9E5;
 }
 
 main section {
@@ -111,4 +128,21 @@ footer a:first-child img {
 footer a:first-child {
     display: flex;
     justify-content: center;
+}
+
+.footerbottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid #EEE9E5;
+}
+
+.footerbottom * {
+    padding: .3em;
+    font-size: .8em;
+}
+
+/* hamburger menu responsive */
+.responsive {
+    display: block;
 }

@@ -34,9 +34,9 @@
                     alt="Twitter logo"></a>
             <a class='hambutton'>&#9776</a>
         </div>
-        <div class="todaydate"></div>
+        <div id="todaydate"></div>
     </header>
-    <nav>
+    <nav class='nav'>
         <a class='active' href="index.html">--Home--</a>
         <a href="color-scheme.html">Color Scheme</a>
         <a href="target-audience.html">Target Audience</a>
@@ -75,9 +75,15 @@
         <a
             href="https://www.mapquest.com/search/result?slug=%2Fus%2Fid%2Fmud-lake&query=Mud%20Lake,%20ID&page=0&mqId=282088293&index=0">📍
             Location Map</a>
-        <p>&copy;<span id='outputspan'></span> Mud Lake Chamber | Glen Meredith | Idaho</p>
-        <p>Last updated: <span id="lastmod"></span></p>
+        <div class='footerbottom'>
+            <p>&copy;<span id='outputspan'></span> Mud Lake Chamber</p>
+            <p><strong>Glen Meredith</strong></p>
+            <p>WWD 230 Project</p>
+            <p>Last updated: <span id="lastmod"></span></p>
+        </div>
     </footer>
+    <script src="js/script.js">
+    </script>
 </body>
 
 </html>
