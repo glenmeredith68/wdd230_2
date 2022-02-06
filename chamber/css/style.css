@@ -4,6 +4,7 @@
     font-family: 'Bodoni Moda', serif;
     max-width: 960px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 header {
@@ -66,6 +67,7 @@ header div:first-child a:first-child img {
 
 nav {
     display: none;
+    transition: display, 200ms ease;
 }
 
 nav a {
@@ -91,6 +93,10 @@ main section {
     margin-bottom: 1em;
 }
 
+main section:nth-child(6) {
+    display: none;
+}
+
 section p {
     background-color: #083e7700;
     height: 10em;
@@ -102,6 +108,10 @@ section p {
     height: 8em;
     border: 1px solid #083d77;
     margin: 1em;
+}
+
+.spotlight div:nth-child(3) {
+    display: none;
 }
 
 footer {
@@ -128,6 +138,18 @@ footer a:first-child img {
 footer a:first-child {
     display: flex;
     justify-content: center;
+}
+
+.footeraddress {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footercontact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .footerbottom {
