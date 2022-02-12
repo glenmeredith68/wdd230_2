@@ -84,13 +84,19 @@ nav a:hover {
     background-color: #EEE9E5;
 }
 
-main section {
+main {
+    display: flex;
+    flex-direction: column;
     width: 90%;
+    gap: 1em;
+    margin: 1.5em auto 1em auto;
+}
+
+main section {
+    width: 100%;
     height: auto;
     border: 1px solid #083d77;
     background-color: #083e774b;
-    margin-top: 1em;
-    margin-bottom: 1em;
 }
 
 main section:nth-child(6) {
