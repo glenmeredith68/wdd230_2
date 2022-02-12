@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+}
+
 header {
     margin-bottom: 1em;
 }
@@ -77,6 +81,7 @@ nav a {
     line-height: 42px;
     text-decoration: none;
     background-color: #514A39;
+    padding: 0 1em;
 }
 
 nav a:hover {
@@ -173,4 +178,10 @@ footer a:first-child {
 /* hamburger menu responsive */
 .responsive {
     display: block;
+    position: absolute;
+    right: 5%;
+    top: 3.5%;
+    border-radius: 7px;
+    background-color: #514A39;
+    overflow: hidden;
 }
