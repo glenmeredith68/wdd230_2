@@ -101,11 +101,61 @@ main section {
     width: 100%;
     height: auto;
     border: 1px solid #083d77;
-    background-color: #083e774b;
+    background-color: #c1c7ce;
+    display: flex;
+}
+
+section:first-child {
+    position: relative;
+    background-color: none;
+    border: none;
+}
+
+main section:nth-child(2),
+section:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+}
+
+.weathergrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #c1c7ce;
 }
 
 main section:nth-child(6) {
     display: none;
+}
+
+section:first-child img {
+    max-width: 100%;
+}
+
+section:first-child a {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #083d77;
+    background-color: #EEE9E5;
+    padding: .5em;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px #EEE9E5;
+}
+
+section:first-child h2 {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    font-size: 1.5em;
+    background-color: #083e7700;
+    color: #EEE9E5;
+}
+
+section h2 {
+    font-size: 1.5em;
+    background-color: #c1c7ce;
 }
 
 section p {
