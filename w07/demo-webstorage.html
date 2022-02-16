@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+
+<body>
+    <main>
+        <p>Your last visit was on <span id="last-visit-date"></span></p>
+        <p>That was <span id="last-visit-seconds"></span> seconds ago.</p>
+        <p>That was <span id="daysAgo"></span> days ago.</p>
+    </main>
+
+    <script>
+        let lastVisitDate = window.localStorage.getItem('lastvisit');
+        const now = Date.now();
+        if (!lastVisitDate) {
+            lastVisitDate = now;
+        }
+
+        window.localStorage['lastvisit'] = now;
+
+        const secondsSinceLastVisit = Math.round((now - lastVisitDate) / 1000);
+
+        const daysAgo = Math.round(secondsSinceLastVisit / 86400);
+
+
+
+
+
+        document.querySelector('#last-visit-seconds').textContent = secondsSinceLastVisit;
+        document.querySelector('#daysAgo').textContent = daysAgo;
+
+    </script>
+</body>
+
+</html>
