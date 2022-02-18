@@ -1,0 +1,18 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 300px;
+    margin: 0 auto;
+}
+
+img[data-src] {
+    filter: invert(100%);
+}
+
+img {
+    filter: invert(0%);
+    transition: filter .7s;
+}
