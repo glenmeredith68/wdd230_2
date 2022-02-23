@@ -19,12 +19,37 @@ h1 {
     margin-bottom: .2em;
 }
 
-header div:first-child a:first-child {
+.logotitle {
     display: flex;
-    flex-direction: row;
+    justify-content: start;
 }
 
-header div:first-child {
+.logotitle a {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+#logo {
+    max-width: 100px;
+}
+
+#logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: end;
+    flex: 0 0 30px;
+}
+
+.buttons a img {
+    width: 44px;
+}
+
+header>div:first-child {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -38,11 +63,11 @@ a {
     margin: 0;
 }
 
-.social {
+/* .social {
     margin: 0;
     width: 80%;
     height: auto;
-}
+} */
 
 .hambutton {
     font-size: 3em;
@@ -53,11 +78,6 @@ h2 {
     font-size: .8em;
 }
 
-header div:first-child a:first-child img {
-    width: 30%;
-    height: auto;
-    margin: 0;
-}
 
 #todaydate {
     height: 2em;
@@ -72,6 +92,7 @@ header div:first-child a:first-child img {
 nav {
     display: none;
     transition: display, 200ms ease;
+    z-index: 1;
 }
 
 nav a {
@@ -103,6 +124,8 @@ main section {
     border: 1px solid #083d77;
     background-color: #c1c7ce;
     display: flex;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 section:first-child {
