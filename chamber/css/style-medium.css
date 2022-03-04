@@ -1,4 +1,4 @@
-@media only screen and (min-width:48em) {
+@media only screen and (min-width:43em) {
     header {
         border: 0px solid #514A39;
         border-radius: 7px;
@@ -59,7 +59,7 @@
     }
 
     main section:nth-child(6) {
-        display: block;
+        display: flex;
 
     }
 
@@ -73,6 +73,50 @@
     main section:nth-child(2),
     section:nth-child(3) {
         grid-row: 5 / 6;
+    }
+
+    .weathergrid {
+        grid-template-columns: auto auto;
+    }
+
+
+
+    .weathergrid div img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .weathergrid #temp {
+        font-size: 2em;
+    }
+
+    .join {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .join div {
+        display: grid;
+        place-content: center;
+        font-size: 1.2em;
+        width: 100%;
+        max-width: 25em;
+        height: 3em;
+        background-color: #fe4530;
+        color: #eee9e5;
+        border-radius: 15px;
+
+    }
+
+    .join div:hover {
+        box-shadow: 1px 1px 5px #fe4530;
+    }
+
+    .join p {
+        text-align: center;
     }
 
     footer {

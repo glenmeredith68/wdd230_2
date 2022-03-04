@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Demo</title>
+</head>
+
+<body>
+    <div class="result">
+        <!-- <h1>squadname</h1>
+        <p>home town</p>
+        <p>formed</p>
+        <p>secret base</p>
+        <p>active</p>
+
+        <section>
+            <h2>member name</h2>
+            <p>age</p>
+            <p>secret identity</p>
+            <ul>
+                <li>power 1 </li>
+                <li>power 2</li>
+                <li>power 3</li>
+            </ul>
+        </section> -->
+    </div>
+
+
+    <script>
+        const url = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+        const resultElement = document.querySelector('div.result');
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                // code to insert data into page 
+                console.log(data.squadName);
+                const h1 = document.createElement('h1');
+                h1.textContent = data.squadName;
+                const p1 = document.createElement('p');
+                p1.textContent = `Hometown: ${data.homeTown}`;
+                const p2 = document.createElement('p');
+                p2.textContent = `Formed on: ${data.formed}`;
+                const p3 = document.createElement('p');
+                p3.textContent = `Secret Base Location: ${data.secretBase}`;
+                const p4 = document.createElement('p');
+                p4.textContent = `Active: ${(data.active) ? 'Yes' : 'No'}`;
+
+
+
+
+                resultElement.appendChild(h1);
+                resultElement.appendChild(p1);
+                resultElement.appendChild(p2);
+                resultElement.appendChild(p3);
+                resultElement.appendChild(p4);
+
+                for (let member of data.members) {
+                    displayHero(member);
+
+                }
+            })
+
+        function displayHero(member) {
+            const s = document.createElement('section');
+            const h2 = document.createElement('h2');
+            const p1 = document.createElement('p');
+            const p2 = document.createElement('p');
+            const ul = document.createElement('ul');
+            h2.textContent = member.name;
+            p1.textContent = `Age: ${member.age}`;
+            p2.textContent = `Secret Identity: ${member.secretIdentity}`;
+
+            for (let power of member.powers) {
+                const li = document.createElement('li');
+                li.textContent = power;
+                ul.appendChild(li);
+            }
+
+            s.appendChild(h2);
+            s.appendChild(p1);
+            s.appendChild(p2);
+            s.appendChild(ul);
+            resultElement.appendChild(s);
+        }
+    </script>
+</body>
+
+</html>
