@@ -5,6 +5,18 @@
         margin-bottom: 0;
     }
 
+    header div:first-child a {
+        gap: 7em;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    #title h2 {
+        font-size: 2em;
+    }
+
     .hambutton {
         display: none;
     }

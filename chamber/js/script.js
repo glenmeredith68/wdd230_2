@@ -31,7 +31,7 @@ datefield.innerHTML = fulldate;
 
 // add banner at the top on Mondays and Tuesdays
 console.log(now.getDay())
-if (now.getDay() == 6 || now.getDay() == 2) {
+if (now.getDay() == 1 || now.getDay() == 2) {
     let body = document.querySelector('body');
     let banner = document.createElement('div');
     let bannerText = document.createElement('h3');
