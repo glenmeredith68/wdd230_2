@@ -181,6 +181,10 @@ section:nth-child(4) {
     border-bottom: 1px solid #514A39;
 }
 
+#windchill-span {
+    background-color: #c1c7ce;
+}
+
 main section:nth-child(6) {
     display: none;
 }
@@ -256,6 +260,10 @@ h3 {
 
 .spotlight div p {
     text-align: center;
+}
+
+.spotlight div div {
+    background-color: #c1c7ce;
 }
 
 .spotlight div:nth-child(3) {

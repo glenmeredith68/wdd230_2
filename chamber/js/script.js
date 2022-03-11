@@ -30,7 +30,7 @@ const fulldate = new Intl.DateTimeFormat('en-US', {
 datefield.innerHTML = fulldate;
 
 // add banner at the top on Mondays and Tuesdays
-console.log(now.getDay())
+// console.log(now.getDay())
 if (now.getDay() == 1 || now.getDay() == 2) {
     let body = document.querySelector('body');
     let banner = document.createElement('div');
