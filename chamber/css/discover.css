@@ -2,12 +2,22 @@ main h1 {
     font-size: 2em;
 }
 
+.fast-facts h2,
+.gallery h2 {
+    margin-top: .5em;
+}
 
 .discovergrid {
     width: 90%;
 }
 
-.fast-facts {}
+.fast-facts {
+    flex-direction: column;
+}
+
+.fast-facts h2 {
+    margin-bottom: .5em;
+}
 
 .gallery {
     display: flex;
@@ -26,6 +36,7 @@ main h1 {
     overflow: hidden;
     border: 1px solid #083d77;
     transition: box-shadow .1s ease-out;
+    max-width: 467px;
 }
 
 .gallery div p {
@@ -38,10 +49,6 @@ main h1 {
     max-width: 100%;
     height: auto;
 
-}
-
-.gallery div:hover {
-    box-shadow: 0px 0px 6px #fe4530;
 }
 
 
@@ -57,4 +64,10 @@ main h1 {
         gap: 1em;
         width: 100%;
     }
+
+    .gallery div:hover {
+        box-shadow: 0px 0px 6px #fe4530;
+    }
+
+
 }
