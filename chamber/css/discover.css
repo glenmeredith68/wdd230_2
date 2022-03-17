@@ -1,0 +1,60 @@
+main h1 {
+    font-size: 2em;
+}
+
+
+.discovergrid {
+    width: 90%;
+}
+
+.fast-facts {}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    max-width: 100%;
+    padding: 0 1em;
+    padding-bottom: 1em;
+
+}
+
+.gallery div {
+    background-color: #c1c7ce;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid #083d77;
+    transition: box-shadow .1s ease-out;
+}
+
+.gallery div p {
+    background-color: #c1c7ce;
+    margin: 8px;
+    text-align: center;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+.gallery div:hover {
+    box-shadow: 0px 0px 6px #fe4530;
+}
+
+
+@media only screen and (min-width:43em) {
+
+    main {
+        display: block;
+    }
+
+    .discovergrid {
+        display: grid;
+        grid-template-columns: 65% 1fr;
+        gap: 1em;
+        width: 100%;
+    }
+}

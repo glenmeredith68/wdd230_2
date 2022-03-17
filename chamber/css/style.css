@@ -15,7 +15,7 @@ header {
     margin-bottom: 1em;
 }
 
-h1 {
+header h1 {
     margin-bottom: .2em;
 }
 
@@ -118,7 +118,7 @@ main {
     margin: 1.5em auto 1em auto;
 }
 
-.home section {
+.card {
     width: 100%;
     height: auto;
     border: 1px solid #083d77;
