@@ -165,8 +165,9 @@ main {
 
 #weathericon {
     background-color: #c1c7ce;
-    max-width: 100%;
-    height: 100%;
+    max-width: 56px;
+    height: 56px;
+
 }
 
 #temp {
@@ -269,6 +270,10 @@ h3 {
 
 .spotlight div div {
     background-color: #c1c7ce;
+}
+
+iframe {
+    height: 187px;
 }
 
 .spotlight div:nth-child(3) {
