@@ -1,0 +1,51 @@
+table {
+    border: 1px solid #bdc0c1;
+    width: 260px;
+    height: 280px;
+    box-shadow: 5px 5px 15px #6c93ab;
+    border-collapse: collapse;
+}
+
+table * {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    border: 1px solid #cdd1d0;
+}
+
+strong,
+i {
+    border: none;
+}
+
+
+
+.navy {
+    color: white;
+    background-color: #628ca6;
+}
+
+strong:first-child {
+    font-size: 1.3em;
+}
+
+table thead tr th strong {
+    color: black;
+}
+
+.teal {
+    color: white;
+    background-color: #7fb9c2;
+}
+
+.mint {
+    background-color: #e6feec;
+}
+
+.grey {
+    background-color: #e7f0ed;
+}
+
+.smaller {
+    font-size: .6em;
+    color: black;
+}
