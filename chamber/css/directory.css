@@ -45,11 +45,19 @@
 }
 
 .dir-list section {
-    display: flex;
-    justify-content: left;
-    padding: 1.5em 1.5em;
-    align-items: center;
+    display: block;
+    padding: .5em 1.5em;
+    width: 30em;
 }
+
+.dir-list * {
+    margin-bottom: 10px;
+}
+
+.dir-list h2 {
+    font-size: 1em;
+}
+
 
 .dir-cards a,
 .dir-list a {
@@ -58,4 +66,21 @@
 
 .hide {
     display: none;
+}
+
+@media only screen and (min-width:48em) {
+    .dir-list .address {
+        display: block;
+    }
+
+    .dir-list section {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding: 1.5em 1.5em;
+        align-items: center;
+        width: 100%;
+    }
+
+
 }

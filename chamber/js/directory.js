@@ -75,11 +75,12 @@ fetch(path)
             img.setAttribute('loading', 'lazy');
 
             address.textContent = business.address;
+            address.classList.add('address');
 
             phone.textContent = business.phone;
 
             website.setAttribute('href', business.website);
-            website.textContent = `${business.website}`;
+            website.textContent = `${business.name}`;
 
             status.textContent = `Status: ${business.status}`;
 
@@ -97,6 +98,14 @@ const cardBtn = document.querySelector('#card-view');
 const listBtn = document.querySelector('#list-view');
 const cards = document.querySelector('.dir-cards');
 const list = document.querySelector('.dir-list');
+
+
+let width = window.innerWidth;
+console.log(width);
+if (width > 688 && width < 868) {
+    list.classList.toggle('hide');
+    cards.classList.toggle('hide');
+}
 
 
 cardBtn.addEventListener('click', () => {
