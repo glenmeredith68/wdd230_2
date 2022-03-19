@@ -2,7 +2,7 @@ const path = 'js/directory.json';
 fetch(path)
     .then(response => response.json())
     .then(data => {
-        console.log(data);
+        // console.log(data);
         const businesses = data['businesses'];
         businesses.forEach(business => {
             let card = document.createElement('section');
@@ -26,6 +26,7 @@ fetch(path)
             phone.textContent = business.phone;
 
             website.setAttribute('href', business.website);
+            website.textContent = `${business.website}`;
 
             status.textContent = `Status: ${business.status}`;
 
@@ -55,7 +56,7 @@ fetch(path)
 fetch(path)
     .then(response => response.json())
     .then(data => {
-        console.log(data);
+        // console.log(data);
         const businesses = data['businesses'];
         businesses.forEach(business => {
             let listEntry = document.createElement('section');
@@ -78,6 +79,7 @@ fetch(path)
             phone.textContent = business.phone;
 
             website.setAttribute('href', business.website);
+            website.textContent = `${business.website}`;
 
             status.textContent = `Status: ${business.status}`;
 
@@ -85,8 +87,9 @@ fetch(path)
             listEntry.appendChild(address);
             listEntry.appendChild(phone);
             listEntry.appendChild(website);
+            listEntry.classList.add('card')
 
-            document.getElementsByClassName('dir-list').appendChild(listEntry);
+            document.querySelector('.dir-list').appendChild(listEntry);
         });
     });
 
@@ -99,9 +102,17 @@ const list = document.querySelector('.dir-list');
 cardBtn.addEventListener('click', () => {
     list.classList.toggle('hide');
     cards.classList.toggle('hide');
+    let cButton = document.querySelector('.card-button');
+    cButton.textContent = '🔳';
+    let lButton = document.querySelector('.list-button');
+    lButton.textContent = '🔲';
 });
 
 listBtn.addEventListener('click', () => {
     cards.classList.toggle('hide');
     list.classList.toggle('hide');
+    let button = document.querySelector('.list-button');
+    button.textContent = '🔳';
+    let cButton = document.querySelector('.card-button');
+    cButton.textContent = '🔲';
 })

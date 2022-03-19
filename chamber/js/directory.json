@@ -5,7 +5,7 @@
         "img": "images/fashion-logo.jpg",
         "phone": "888-666-4444",
         "address": "123 Easy St. Mud Lake, ID 83450",
-        "website": "https://www.fashionpassion.com",
+        "website": "www.fashionpassion.com",
         "status": "Gold"
     },
     {
@@ -13,7 +13,7 @@
         "img": "images/music-logo.jpg",
         "phone": "7777-5555-3333",
         "address": "456 Hard St. Mud Lake, ID 83450",
-        "website": "https://www.cvmstudios.com",
+        "website": "www.cvmstudios.com",
         "status": "Gold"
     },
     {
@@ -21,7 +21,7 @@
         "img": "images/food-logo.jpg",
         "phone": "999-777-5555",
         "address": "789 Medium St. Mud Lake, ID 83450",
-        "website": "https://www.curryinahurry.com",
+        "website": "www.curryinahurry.com",
         "status": "Gold"
     },
     {
@@ -29,7 +29,7 @@
         "img": "images/thrift-logo.jpg",
         "phone": "123-456-7890",
         "address": "234 Red St. Mud Lake, ID 83450",
-        "website": "https://www.thatsthrifty.com",
+        "website": "www.thatsthrifty.com",
         "status": "Non-profit"
     },
     {
@@ -37,7 +37,7 @@
         "img": "images/fridge-logo.jpg",
         "phone": "234-567-8901",
         "address": "345 Yellow St. Mud Lake, ID 83450",
-        "website": "https://www.fridgeridge.com",
+        "website": "www.fridgeridge.com",
         "status": "Silver"
     },
     {
@@ -45,7 +45,7 @@
         "img": "images/maid-logo.jpg",
         "phone": "345-678-9012",
         "address": "456 Blue St. Mud Lake, ID 83450",
-        "website": "https://www.maidinmudlake.com",
+        "website": "www.maidinmudlake.com",
         "status": "Bronze"
     },
     {
@@ -53,7 +53,7 @@
         "img": "images/under-logo.jpg",
         "phone": "456-789-0123",
         "address": "567 Big St. Mud Lake, ID 83450",
-        "website": "https://www.undertherecleaning.com",
+        "website": "www.undertherecleaning.com",
         "status": "Silver"
     },
     {
@@ -61,7 +61,7 @@
         "img": "images/science-logo.jpg",
         "phone": "567-890-1234",
         "address": "678 Little St. Mud Lake, ID 83450",
-        "website": "https://www.goronboron.com",
+        "website": "www.goronboron.com",
         "status": "Gold"
     },
     {
@@ -69,7 +69,7 @@
         "img": "images/spine-logo.jpg",
         "phone": "678-901-2345",
         "address": "789 Medium St. Mud Lake, ID 83450",
-        "website": "https://www.zorachiropractic.com",
+        "website": "www.zorachiropractic.com",
         "status": "Bronze"
     },
     {
@@ -77,7 +77,7 @@
         "img": "images/burrito-logo.jpg",
         "phone": "789-012-3456",
         "address": "890 Left St. Mud Lake, ID 83450",
-        "website": "https://www.boorito.com",
+        "website": "www.boorito.com",
         "status": "Silver"
     },
     {
@@ -85,15 +85,15 @@
         "img": "images/corn-logo.jpg",
         "phone": "890-123-4567",
         "address": "901 Right St. Mud Lake, ID 83450",
-        "website": "https://www.markandmichelle.com",
+        "website": "www.markandmichelle.com",
         "status": "Gold"
     },
     {
-        "name": "Gloria Meredith Photography",
+        "name": "Gloria Meredith Photos",
         "img": "images/camera-logo.jpg",
         "phone": "901-234-5678",
         "address": "12 Center St. Mud Lake, ID 83450",
-        "website": "https://www.facebook.com/gmp",
+        "website": "www.facebook.com/gmp",
         "status": "Gold"
     }
 ]
