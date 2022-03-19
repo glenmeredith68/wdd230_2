@@ -1,0 +1,14 @@
+/* mkdir lol */
+
+.view-toggle {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 13em;
+}
+
+.view-toggle div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

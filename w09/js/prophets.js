@@ -2,7 +2,7 @@ const url = 'https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-pro
 fetch(url)
     .then(response => response.json())
     .then(data => {
-        console.log(data);
+        // console.log(data);
         const prophets = data['prophets'];
         prophets.forEach(prophet => {
             let card = document.createElement('section');
@@ -18,12 +18,12 @@ fetch(url)
             portrait.setAttribute('loading', 'lazy');
 
             bday.textContent = `${prophet.name} ${prophet.lastname} was born on ${prophet.birthdate}.`;
-            bplace.textContent = `President ${prophet.lastname} was born in ${prophet.birthplace}.`;
+            bplace.textContent = `President ${prophet.lastname} was born in ${prophet.birthplace}`;
 
             card.appendChild(h2);
             card.appendChild(portrait);
             card.appendChild(bday);
-            card.appendChild(bplace);
+            card.appendChild(bplace)
 
             document.querySelector('.cards').appendChild(card);
 
