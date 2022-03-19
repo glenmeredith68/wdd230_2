@@ -8,6 +8,60 @@ fetch(path)
             let card = document.createElement('section');
             let h2 = document.createElement('h2');
             let img = document.createElement('img');
+            let imgdiv = document.createElement('div');
+            let address = document.createElement('p');
+            let phone = document.createElement('p');
+            let website = document.createElement('a');
+            let status = document.createElement('p');
+
+            h2.textContent = business.name;
+
+            img.setAttribute('src', business.img);
+            img.setAttribute('alt', `${business.name}'s logo`);
+            img.setAttribute('loading', 'lazy');
+            imgdiv.appendChild(img);
+
+            address.textContent = business.address;
+
+            phone.textContent = business.phone;
+
+            website.setAttribute('href', business.website);
+
+            status.textContent = `Status: ${business.status}`;
+
+            card.appendChild(h2);
+            card.appendChild(imgdiv);
+            card.appendChild(address);
+            card.appendChild(phone);
+            card.appendChild(website);
+            card.appendChild(status);
+            card.classList.add('card')
+
+            document.querySelector('.dir-cards').appendChild(card);
+
+
+            // let listEntry = document.createElement('div');
+
+            // listEntry.appendChild(h2);
+            // listEntry.appendChild(address);
+            // listEntry.appendChild(phone);
+            // listEntry.appendChild(website);
+
+            // document.querySelector('.dir-list').appendChild(listEntry);
+
+        });
+    });
+
+fetch(path)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+        const businesses = data['businesses'];
+        businesses.forEach(business => {
+            let listEntry = document.createElement('section');
+            let h2 = document.createElement('h2');
+            let img = document.createElement('img');
+            let imgdiv = document.createElement('div');
             let address = document.createElement('p');
             let phone = document.createElement('p');
             let website = document.createElement('a');
@@ -25,27 +79,14 @@ fetch(path)
 
             website.setAttribute('href', business.website);
 
-            status.textContent = business.status;
+            status.textContent = `Status: ${business.status}`;
 
-            card.appendChild(h2);
-            card.appendChild(img);
-            card.appendChild(address);
-            card.appendChild(phone);
-            card.appendChild(website);
-            card.appendChild(status);
+            listEntry.appendChild(h2);
+            listEntry.appendChild(address);
+            listEntry.appendChild(phone);
+            listEntry.appendChild(website);
 
-            document.querySelector('.dir-cards').appendChild(card);
-
-
-            // let listEntry = document.createElement('div');
-
-            // listEntry.appendChild(h2);
-            // listEntry.appendChild(address);
-            // listEntry.appendChild(phone);
-            // listEntry.appendChild(website);
-
-            // document.querySelector('.dir-list').appendChild(listEntry);
-
+            document.getElementsByClassName('dir-list').appendChild(listEntry);
         });
     });
 
@@ -56,5 +97,11 @@ const list = document.querySelector('.dir-list');
 
 
 cardBtn.addEventListener('click', () => {
-    list.
+    list.classList.toggle('hide');
+    cards.classList.toggle('hide');
+});
+
+listBtn.addEventListener('click', () => {
+    cards.classList.toggle('hide');
+    list.classList.toggle('hide');
 })
