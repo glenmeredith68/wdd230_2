@@ -2,7 +2,7 @@
     "businesses":[ 
         {
         "name": "Fashion Passion",
-        "img": "images/fashion-logo.jpg",
+        "img": "images/business-logos/fashion-logo.jpg",
         "phone": "888-666-4444",
         "address": "123 Easy St. Mud Lake, ID 83450",
         "website": "www.fashionpassion.com",
@@ -10,7 +10,7 @@
     },
     {
         "name": "CVM Studios",
-        "img": "images/music-logo.jpg",
+        "img": "images/business-logos/music-logo.jpg",
         "phone": "7777-5555-3333",
         "address": "456 Hard St. Mud Lake, ID 83450",
         "website": "www.cvmstudios.com",
@@ -18,7 +18,7 @@
     },
     {
         "name": "Curry In a Hurry",
-        "img": "images/food-logo.jpg",
+        "img": "images/business-logos/food-logo.jpg",
         "phone": "999-777-5555",
         "address": "789 Medium St. Mud Lake, ID 83450",
         "website": "www.curryinahurry.com",
@@ -26,7 +26,7 @@
     },
     {
         "name": "That's Thrifty",
-        "img": "images/thrift-logo.jpg",
+        "img": "images/business-logos/thrift-logo.webp",
         "phone": "123-456-7890",
         "address": "234 Red St. Mud Lake, ID 83450",
         "website": "www.thatsthrifty.com",
@@ -34,7 +34,7 @@
     },
     {
         "name": "Fridge Ridge",
-        "img": "images/fridge-logo.jpg",
+        "img": "images/business-logos/fridge-logo.webp",
         "phone": "234-567-8901",
         "address": "345 Yellow St. Mud Lake, ID 83450",
         "website": "www.fridgeridge.com",
@@ -42,7 +42,7 @@
     },
     {
         "name": "Maid in Mud Lake",
-        "img": "images/maid-logo.jpg",
+        "img": "images/business-logos/maid-logo.webp",
         "phone": "345-678-9012",
         "address": "456 Blue St. Mud Lake, ID 83450",
         "website": "www.maidinmudlake.com",
@@ -50,7 +50,7 @@
     },
     {
         "name": "Under There Cleaning",
-        "img": "images/under-logo.jpg",
+        "img": "images/business-logos/under-logo.webp",
         "phone": "456-789-0123",
         "address": "567 Big St. Mud Lake, ID 83450",
         "website": "www.undertherecleaning.com",
@@ -58,7 +58,7 @@
     },
     {
         "name": "Goron Boron",
-        "img": "images/science-logo.jpg",
+        "img": "images/business-logos/science-logo.webp",
         "phone": "567-890-1234",
         "address": "678 Little St. Mud Lake, ID 83450",
         "website": "www.goronboron.com",
@@ -66,7 +66,7 @@
     },
     {
         "name": "Zora Chiropractic",
-        "img": "images/spine-logo.jpg",
+        "img": "images/business-logos/spine-logo.webp",
         "phone": "678-901-2345",
         "address": "789 Medium St. Mud Lake, ID 83450",
         "website": "www.zorachiropractic.com",
@@ -74,7 +74,7 @@
     },
     {
         "name": "Boo Rito!",
-        "img": "images/burrito-logo.jpg",
+        "img": "images/business-logos/burrito-logo.webp",
         "phone": "789-012-3456",
         "address": "890 Left St. Mud Lake, ID 83450",
         "website": "www.boorito.com",
@@ -82,7 +82,7 @@
     },
     {
         "name": "Mark & Michelle Co. Rn.",
-        "img": "images/corn-logo.jpg",
+        "img": "images/business-logos/corn-logo.webp",
         "phone": "890-123-4567",
         "address": "901 Right St. Mud Lake, ID 83450",
         "website": "www.markandmichelle.com",
@@ -90,7 +90,7 @@
     },
     {
         "name": "Gloria Meredith Photos",
-        "img": "images/camera-logo.jpg",
+        "img": "images/business-logos/camera-logo.webp",
         "phone": "901-234-5678",
         "address": "12 Center St. Mud Lake, ID 83450",
         "website": "www.facebook.com/gmp",
