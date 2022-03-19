@@ -67,7 +67,7 @@ form input:required:valid {
     border-left: 5px solid rgba(0, 128, 0, 0.692);
 }
 
-#datetime {
+.datetime {
     display: none;
 }
 
@@ -118,13 +118,13 @@ form input:required:valid {
     }
 
     .bronze {
-        border: 1px solid #73683B;
+        border: 1px solid #AC9C5D;
     }
 
     .bronze,
     .bronze ul,
     .bronze li {
-        background-color: #AC9C5D;
+        background-color: #50492A;
         color: #eee9e5;
         padding: .5em 1.5em;
         border-radius: 4px;

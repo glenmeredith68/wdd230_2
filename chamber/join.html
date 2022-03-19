@@ -79,23 +79,25 @@
                     <label class="top" for="bus-name">Business Name*</label>
                     <input class="top" type="text" name="bus-name" id="bus-name"
                         placeholder="Desiirous Designs" required>
-                    <label class="top" for="membership">Membership Level</label>
-                    <label class="sbs" for=""><input type="radio" name="membership" id="beginner"
-                            value="np">
-                        Non-profit</label>
-                    <label class="sbs" for="bronze"><input type="radio" name="membership"
-                            id="bronze" value="bronze">
-                        Bronze</label>
-                    <label class="sbs" for="silver"><input type="radio" name="membership"
-                            id="silver" value="silver">
-                        Silver</label>
-                    <label class="sbs" for="gold"><input type="radio" name="membership" id="gold"
-                            value="gold">
-                        Gold</label>
+                    <label class="top" for="membership">Membership Level
+                        <label class="sbs" for="np"><input type="radio" name="membership" id="np"
+                                value="np">
+                            Non-profit</label>
+                        <label class="sbs" for="bronze"><input type="radio" name="membership"
+                                id="bronze" value="bronze">
+                            Bronze</label>
+                        <label class="sbs" for="silver"><input type="radio" name="membership"
+                                id="silver" value="silver">
+                            Silver</label>
+                        <label class="sbs" for="gold"><input type="radio" name="membership"
+                                id="gold" value="gold">
+                            Gold</label>
+                    </label>
                     <label class="top" for="bus-description">Business Description</label>
                     <textarea class="top" name="bus-description" id="bus-description" cols="30"
                         rows="6" placeholder="My business is..."></textarea>
-                    <input type="datetime-local" name="datetime" id="datetime">
+                    <label class="datetime" for="datetime"><input type="datetime-local"
+                            name="datetime" class="datetime"></label>
                 </fieldset>
                 <input class="submit" type="submit" value="Join the Chamber">
             </form>
@@ -105,10 +107,10 @@
                     <li class="np">Non-profit
                         <ul>
                             <li>
-                                <p>Non-profit organizations pay no fees.</span>
+                                <p>Non-profit organizations pay no fees.</p>
                             </li>
                             <li>
-                                <p>Basic booth placement at our events.</span>
+                                <p>Basic booth placement at our events.</p>
                             </li>
                             <li>
                                 <p>Full participation and voice in Chamber meetings. Be
@@ -119,7 +121,7 @@
                     <li class="bronze">Bronze
                         <ul>
                             <li>
-                                <p>Bronze membership is just $50/year.</span>
+                                <p>Bronze membership is just $50/year.</p>
                             </li>
                             <li>
                                 <p>
@@ -128,7 +130,7 @@
                                 </p>
                             </li>
                             <li>
-                                <p>Quarterly meetings one-on-one with a board member.</span>
+                                <p>Quarterly meetings one-on-one with a board member.</p>
                             </li>
                         </ul>
                     </li>
@@ -146,14 +148,14 @@
                                 </p>
                             </li>
                             <li>
-                                <p>Monthly meetings one-on-one with a board member.</span>
+                                <p>Monthly meetings one-on-one with a board member.</p>
                             </li>
                         </ul>
                     </li>
                     <li class="gold">Gold
                         <ul>
                             <li>
-                                <p>Gold membership is $300/year for these benefits:</span>
+                                <p>Gold membership is $300/year for these benefits:</p>
                             </li>
                             <li>
                                 <p>
@@ -171,6 +173,8 @@
                             </li>
                         </ul>
                     </li>
+                </ul>
+            </fieldset>
         </div>
     </main>
     <footer>
