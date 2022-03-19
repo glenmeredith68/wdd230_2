@@ -45,6 +45,10 @@ li {
     line-height: 40px;
 }
 
+a:visited {
+    color: inherit;
+}
+
 footer {
     background-color: #145214;
     border-radius: 10px;
