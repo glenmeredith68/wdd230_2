@@ -16,7 +16,7 @@ form fieldset {
     padding: .5em 2%;
 }
 
-form legend {
+legend {
     margin: 0 1em;
     padding: .25em .5em;
     border: 1px solid #083d77;
@@ -69,6 +69,106 @@ form input:required:valid {
 
 #datetime {
     display: none;
+}
+
+.benefits {
+    display: none;
+}
+
+.benefits ul {
+    padding-left: 0;
+}
+
+@media only screen and (min-width:43em) {
+    .benefits {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        width: 100%;
+        max-width: 20em;
+        margin-top: 2em;
+        height: fit-content;
+    }
+
+    .benefits>ul {
+        list-style: none;
+        background-color: #c1c7ce;
+
+    }
+
+    .benefits li ul {
+        list-style: disc;
+    }
+
+    .benefits>ul>li {
+        margin-bottom: 1em;
+    }
+
+    .np {
+        border: 1px solid #E07A5F;
+    }
+
+    .np,
+    .np ul,
+    .np li {
+        background-color: #ECAA98;
+        padding: .5em 1.5em;
+        border-radius: 4px;
+    }
+
+    .bronze {
+        border: 1px solid #73683B;
+    }
+
+    .bronze,
+    .bronze ul,
+    .bronze li {
+        background-color: #AC9C5D;
+        color: #eee9e5;
+        padding: .5em 1.5em;
+        border-radius: 4px;
+    }
+
+    .bronze p {
+        color: #eee9e5;
+    }
+
+    .silver {
+        border: 1px solid #606D5D;
+    }
+
+    .silver,
+    .silver ul,
+    .silver li {
+        background-color: #BEC6BE;
+        padding: .5em 1.5em;
+        border-radius: 4px;
+    }
+
+    .gold {
+        border: 1px solid #767522;
+    }
+
+    .gold,
+    .gold ul,
+    .gold li {
+        background-color: #DAD981;
+        padding: .5em 1.5em;
+        border-radius: 4px;
+    }
+
+    .benefits ul li ul li p {
+        background-color: inherit;
+        line-height: 1.5em;
+        margin-left: -1em;
+    }
+
+    .joinpage {
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width:54.3em) {
