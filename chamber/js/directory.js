@@ -19,6 +19,8 @@ fetch(path)
             img.setAttribute('src', business.img);
             img.setAttribute('alt', `${business.name}'s logo`);
             img.setAttribute('loading', 'lazy');
+            img.setAttribute('width', 150);
+            img.setAttribute('height', 150);
             imgdiv.appendChild(img);
 
             address.textContent = business.address;
