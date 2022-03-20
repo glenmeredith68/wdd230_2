@@ -1,0 +1,48 @@
+.contact-card {
+    flex-direction: column;
+    max-width: 100%;
+    padding: .5em 1.5em;
+}
+
+.contact-card h2,
+.contact-card div:first-child,
+.contact-card p {
+    margin-bottom: .5em;
+}
+
+.contact-card p {
+    line-height: 1.55em;
+}
+
+.contact-card div {
+    background-color: #c1c7ce;
+}
+
+.contact-card div img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-text * {
+    display: block;
+    align-self: flex-start;
+}
+
+.contact-text a {
+    color: #083d77;
+}
+
+.contact-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 310px);
+    justify-content: center;
+    gap: 1em;
+
+}
+
+.contact-centering-grid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
