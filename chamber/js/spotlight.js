@@ -9,7 +9,7 @@ fetch(path)
                     busList.push(business);
                 }
             });
-            console.log(busList);
+            // console.log(busList);
 
             let slOneH3 = document.querySelector(".spotlight-1-h3");
             let slTwoH3 = document.querySelector(".spotlight-2-h3");
@@ -24,7 +24,7 @@ fetch(path)
             let slthreeP = document.querySelector('.spotlight-3-p');
 
             listLength = busList.length;
-            console.log(listLength);
+            // console.log(listLength);
             let a = Math.floor(Math.random() * (listLength + 1));
 
             let bus1 = busList[a];
@@ -39,7 +39,7 @@ fetch(path)
             }
             let bus3 = busList[c];
 
-            console.log(bus1);
+            // console.log(bus1);
 
             slOneH3.textContent = bus1.name;
             slOneImg.setAttribute('src', bus1.img);
