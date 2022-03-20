@@ -12,17 +12,34 @@ main h1 {
 }
 
 .fast-facts {
-    flex-direction: column;
+    display: block;
+    padding: .5em 1.5em;
+    margin-bottom: 1em;
+}
+
+
+.fast-facts ul li {
+    padding-bottom: 1em;
+    background-color: #c1c7ce;
+}
+
+.fast-facts * {
+    background-color: #c1c7ce;
 }
 
 .fast-facts h2 {
     margin-bottom: .5em;
 }
 
+.fast-facts p:first-of-type {
+    margin-bottom: 1em;
+}
+
 .gallery {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     gap: 1em;
     max-width: 100%;
     padding: 0 1em;
@@ -37,6 +54,9 @@ main h1 {
     border: 1px solid #083d77;
     transition: box-shadow .1s ease-out;
     max-width: 467px;
+    min-height: 320px;
+    height: -content;
+    flex: 0 0 auto;
 }
 
 .gallery div p {
@@ -52,10 +72,21 @@ main h1 {
 }
 
 
-@media only screen and (min-width:43em) {
+@media only screen and (min-width:48em) {
 
     main {
         display: block;
+    }
+
+    .fast-facts {
+        height: 40em;
+    }
+
+    .gallery {
+        height: 40em;
+        align-items: center;
+        justify-content: start;
+        overflow: scroll;
     }
 
     .discovergrid {
