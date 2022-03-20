@@ -48,12 +48,17 @@ fetch(path)
             if (bus2.name == "CVM Studios") {
                 return
             } else {
+                slTwoH3.textContent = bus2.name;
+                // have to take out the iframe and put in the picture
                 let iframe = document.querySelector('iframe');
                 iframe.remove();
                 slTwoPic.setAttribute('src', bus2.img);
-                document.querySelector('.spotlight-2').appendChild
+                document.querySelector('.spotlight-2').insertBefore(slTwoImg, slTwoP);
                 slTwoP.textContent = bus2.snippet;
             }
+            slThreeH3.textContent = bus3.name;
+            slThreeImg.setAttribute('src', bus3.img);
+            slthreeP.textContent = bus3.snippet;
 
         })
 
