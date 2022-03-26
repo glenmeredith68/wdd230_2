@@ -103,7 +103,7 @@ const list = document.querySelector('.dir-list');
 
 
 let width = window.innerWidth;
-console.log(width);
+// console.log(width);
 if (width > 688 && width < 868) {
     list.classList.toggle('hide');
     cards.classList.toggle('hide');

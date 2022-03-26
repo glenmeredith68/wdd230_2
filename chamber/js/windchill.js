@@ -11,7 +11,7 @@ fetch(url)
             let currCond = document.querySelector('#forecast');
 
             let iconId = weather.weather[0].icon;
-            let iconSource = `http://openweathermap.org/img/wn/${iconId}@2x.png`;
+            let iconSource = `http2://openweathermap.org/img/wn/${iconId}@2x.png`;
             icon.setAttribute('src', iconSource);
             icon.setAttribute('alt', weather.weather[0].description);
 
