@@ -3,7 +3,7 @@ font-family: 'Kaushan Script', cursive;
 font-family: 'Quicksand', sans-serif; */
 
 :root {
-    --dark_pink: #926053;
+    --dark_pink: #e9584d;
     --light_pink: #f9ebe3;
     --blue_navy: #273741;
     --yellow: #e8cb99;
@@ -17,6 +17,7 @@ font-family: 'Quicksand', sans-serif; */
 
 body {
     background-color: var(--light_pink);
+    overflow-x: hidden;
 }
 
 .banner {
@@ -47,8 +48,17 @@ h1 {
 }
 
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Kaushan Script', cursive;
+}
+
+p,
+div {
+    font-family: 'Quicksand', sans-serif;
+}
+p {
+    line-height: 1.5em;
 }
 
 a {
@@ -142,7 +152,7 @@ nav ul li {
     z-index: 5;
 }
 
-.services:hover>ul {
+.services:hover ul {
     visibility: visible;
     opacity: 1;
 }
@@ -157,3 +167,97 @@ nav ul li {
 main {
     padding: 5%;
 }
+
+.hero {
+    width: 100%;
+
+}
+
+.hero-img * {
+    max-width: 100%;
+    height: auto;
+}
+
+.book-today {
+    width: 90%;
+    max-width: 282px;
+    height: 2.3em;
+    background-color: var(--dark_pink);
+    color: var(--light_pink);
+    border-radius: .7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin-top: .3em;
+}
+
+.featured-temple {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+}
+
+.weather-in {
+    border: 3px solid transparent;
+    border-image: linear-gradient(135deg, var(--blue_navy), var(--dark_pink));
+    border-image-slice: 1;
+    padding: .7em;
+}
+
+.forecast {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+    overflow: scroll;
+}
+
+.forecast>div {
+    border: 2px solid var(--yellow);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+    margin-top: 7px;
+    width: 97.35px;
+}
+
+.tiny {
+    font-size: .7em;
+    margin-bottom: -5px;
+}
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.follow-twitter {
+    background-image: url('images/twitter_icon.png');
+}
+
+.happy-wrap {
+    position: relative;
+}
+
+.happy-message {
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    height: 6em;
+    color: var(--yellow);
+    background-color: var(--blue_navy);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+.cursive {
+    margin: 8px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.7em;
+}
+
+
