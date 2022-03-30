@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster+Two&family=Quicksand&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kaushan+Script&family=Quicksand&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Home | Temple Inn & Suites</title>
@@ -19,13 +19,15 @@
 <body>
     <div class="banner">
         <p class="clickable">&cross;</p>
-        <h3>ALERT</h3>
-        <p class="weather-alert">Strong winds in the Portland area today.</p>
+        <div>
+            <h3>ALERT</h3>
+            <p class="weather-alert">Strong winds in the Portland area today.</p>
+        </div>
     </div>
     <header>
-        <a href="index.html">
-            <img src="https://via.placeholder.com/150" alt="Temple Inn & Suites logo" width="150"
-                height="150">
+        <a href="index.html" class="logo-title">
+            <img src="images/temple-logo.webp" alt="Temple Inn & Suites logo" width="150"
+                height="150" id="header-logo">
             <h1>Temple Inn & Suites</h1>
         </a>
         <nav>
@@ -33,7 +35,7 @@
                 <li><a href="index.html">Home</a>
                 <li><a href="reservation.html">Reservation</a></li>
                 </li>
-                <li><a href="services">Services</a>
+                <li class="services"><a href="services">Services</a>
                     <ul class="drop">
                         <li><a href="reception.html">Receptions</a></li>
                         <li><a href="missionary.html">Missionaries</a></li>
@@ -125,6 +127,7 @@
 
 
     </main>
+    <script src="js/script.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 
