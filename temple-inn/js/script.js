@@ -10,3 +10,9 @@ services.addEventListener('mouseout', () => {
     dropdown.style.display = 'none';
     dropdown.style.opacity = '0';
 })
+
+// footer year
+
+let outputSpan = document.querySelector('#outputspan');
+let year = new Date().getFullYear();
+outputSpan.textContent = year;
