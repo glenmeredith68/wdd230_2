@@ -254,7 +254,7 @@ main {
     bottom: 0px;
     left: 0px;
     right: 0px;
-    opacity: .35;
+    opacity: .20;
     background-image: url("../images/twitter_icon.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -275,7 +275,7 @@ main {
     bottom: 0px;
     left: 0px;
     right: 0px;
-    opacity: .35;
+    opacity: .20;
     background-image: url("../images/insta_icon.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -305,4 +305,19 @@ main {
     margin: 8px;
     font-family: 'Great Vibes', cursive;
     font-size: 1.7em;
+}
+
+.phone, .email {
+    display: block;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 1em;
+}
+.footer-social {
+    display: flex;
+    width: 200px;
+    gap: 1em;
+}
+.footer-social img {
+    max-width: 100%;
+    height: auto;
 }
