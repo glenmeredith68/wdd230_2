@@ -136,14 +136,14 @@ nav ul li {
     position: relative;
 }
 
-.services>ul {
+/* .services>ul {
     transition: opacity .25s ease-in;
-}
+} */
 
 .drop {
-    visibility: none;
-    opacity: 0;
-    /* display: flex; */
+    /* visibility: none; */
+    /* opacity: 0; */
+    display: none;
     flex-direction: column;
     background-color: var(--blue_navy);
     transition: all 1s;
@@ -153,10 +153,10 @@ nav ul li {
     z-index: 5;
 }
 
-.services:hover ul {
+/* .services:hover ul {
     visibility: visible;
     opacity: 1;
-}
+} */
 
 .drop li {
     padding: .5em 1em 0 .5em;
@@ -298,7 +298,7 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-
+    margin-bottom: 1em;
 }
 
 .cursive {
@@ -307,17 +307,35 @@ main {
     font-size: 1.7em;
 }
 
-.phone, .email {
+.phone,
+.email {
     display: block;
     font-family: 'Quicksand', sans-serif;
     margin-top: 1em;
 }
+
+.footer-social-wrapper {
+    display: flex;
+    width: 100%;
+    margin-left: -11px;
+}
+
 .footer-social {
     display: flex;
-    width: 200px;
+    float: left;
+    width: 60%;
+    justify-content: flex-start;
     gap: 1em;
+    justify-self: left;
+    margin-left: 0px;
+    margin-top: .5em;
 }
+
 .footer-social img {
     max-width: 100%;
     height: auto;
+}
+
+.footer-bottom {
+    display: block;
 }
