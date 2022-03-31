@@ -28,7 +28,9 @@ body {
     background-color: var(--yellow);
     color: var(--blue_navy);
 }
-
+.x {
+    font-size: 1.5em;
+}
 .banner div {
     display: flex;
     flex-direction: column;
