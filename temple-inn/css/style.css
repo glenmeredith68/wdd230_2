@@ -12,7 +12,7 @@ font-family: 'Quicksand', sans-serif; */
 * {
     margin: 0 auto;
     box-sizing: border-box;
-    max-width: 1100px;
+    max-width: 1400px;
 }
 
 body {
@@ -257,7 +257,7 @@ main {
     left: 0px;
     right: 0px;
     opacity: .20;
-    background-image: url("../images/twitter_icon.png");
+    background-image: url("../images/social/twitter_icon.png");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: local;
@@ -278,7 +278,7 @@ main {
     left: 0px;
     right: 0px;
     opacity: .20;
-    background-image: url("../images/insta_icon.png");
+    background-image: url("../images/social/insta_icon.png");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: local;
@@ -326,6 +326,7 @@ main {
     display: flex;
     float: left;
     width: 60%;
+    max-width: 15em;
     justify-content: flex-start;
     gap: 1em;
     justify-self: left;
