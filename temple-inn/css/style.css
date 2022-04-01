@@ -181,6 +181,10 @@ main {
     height: auto;
 }
 
+/* .book-today-a {
+    display: run-in;
+} */
+
 .book-today {
     width: 90%;
     max-width: 282px;

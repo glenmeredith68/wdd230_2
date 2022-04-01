@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kaushan+Script&family=Quicksand&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-medium.css">
     <title>Home | Temple Inn & Suites</title>
 </head>
 
@@ -52,13 +53,15 @@
                 <img src="images/hero/hero-1260.jpg" alt="HERO IMG">
             </picture>
         </div>
-        <div class="book-today">Book Today!</div>
+        <a class="book-today-a" href="reservation.html"><div class="book-today">Book Today!</div></a>
         <section class="featured-temple">
             <h2>Featured Temple</h2>
             <div>
 
                 <picture>
-                    <source srcset="">
+                    <source srcset="images/temples/portland-350.webp" media="(max-width:37.3em)">
+                    <source srcset="images/temples/portland-500.webp" media="(max-width:54.3em)">
+                    <source srcset="images/temples/portland-350.webp" media="(min-width:54.3em)">
                     <img src="https://via.placeholder.com/200x150" alt="Featured temple"
                         loading="lazy">
                 </picture>
@@ -73,7 +76,7 @@
             <div class="forecast">
                 <div>
                     <p class="day1">Currently</p>
-                    <div><img src="https://via.placeholder.com/50x50" alt="Forecast"
+                    <div><img src="" alt="Forecast"
                             class="day1-img">
                     </div>
                     <p class="day1-temp">33°F</p>
@@ -183,6 +186,7 @@
     </main>
     <script src="js/script.js"></script>
     <script src="js/banner.js"></script>
+    <script src="js/weather.js"></script>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 
