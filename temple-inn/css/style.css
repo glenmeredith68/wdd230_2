@@ -28,9 +28,11 @@ body {
     background-color: var(--yellow);
     color: var(--blue_navy);
 }
+
 .x {
     font-size: 1.5em;
 }
+
 .banner div {
     display: flex;
     flex-direction: column;
@@ -291,6 +293,18 @@ main {
     background-blend-mode: lighten;
 }
 
+.posts {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.post1, .post2, .post3 {
+    display: none;
+}
+.posts img {
+    width: 44px;
+    height: auto;
+}
 .happy-wrap {
     position: relative;
 }
