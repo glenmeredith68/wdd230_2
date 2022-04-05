@@ -57,3 +57,12 @@ rightBtn.addEventListener('click', () => {
     displayedPost = posts[postNum];
     displayedPost.style.display = 'block';
 })
+
+
+// last modified 
+
+function getModified() {
+    let m = document.lastModified;
+    document.querySelector('#last-mod').innerText = m;
+}
+getModified();
