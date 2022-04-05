@@ -1,0 +1,21 @@
+@media only screen and (min-width:54.3em) {
+    main {
+        padding-bottom: 3%;
+    }
+    .tip {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+    .top-grid {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
+    footer {
+        padding-left: 2em;
+        padding-bottom: 2em;
+    }
+
+}

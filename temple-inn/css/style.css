@@ -212,11 +212,22 @@ main {
     cursor:pointer;
 }
 
+.top-grid {
+    margin: 1em;
+    margin-bottom: 3em;
+}
+.top-grid p {
+    line-height: 2.2em;
+    max-width: 430px;
+}
+
 .featured-temple {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1em;
+}
+.tip {
+    display: none;
 }
 
 .weather-in {
@@ -224,6 +235,7 @@ main {
     border-image: linear-gradient(135deg, var(--blue_navy), var(--dark_pink));
     border-image-slice: 1;
     padding: .7em;
+    margin-bottom: 3em;
 }
 
 .forecast {
@@ -231,6 +243,7 @@ main {
     justify-content: flex-start;
     gap: 1em;
     overflow: scroll;
+    padding: 5px;
 }
 
 .forecast>div {
@@ -240,9 +253,10 @@ main {
     gap: 5px;
     padding: 10px;
     margin-top: 7px;
-    width: 97.35px;
+    width: 110px;
     background-color: var(--yellow);
     justify-content: center;
+    box-shadow: 1px 1px 5px var(--blue_navy);
 }
 .weather-icon {
     display: flex;
@@ -261,7 +275,7 @@ main {
 
 .bottom-grid {
     margin-top: 3em;
-    margin-bottom: 2em;
+    margin-bottom: 4em;
 }
 
 .follow {
@@ -274,6 +288,7 @@ main {
     display: flex;
     padding-top: 2em;
     gap: 3em;
+    margin-bottom: 1em;
 }
 
 .follow-twitter {
@@ -369,6 +384,11 @@ main {
     font-family: 'Great Vibes', cursive;
     font-size: 1.7em;
 }
+footer {
+    padding-left: 1em;
+    padding-bottom: 1em;
+}
+
 
 .phone,
 .email {
@@ -376,6 +396,8 @@ main {
     font-family: 'Quicksand', sans-serif;
     margin-top: 1em;
 }
+
+
 
 .footer-social-wrapper {
     display: flex;
