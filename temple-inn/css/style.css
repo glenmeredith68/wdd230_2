@@ -293,14 +293,22 @@ main {
     background-blend-mode: lighten;
 }
 
+
+
 .posts {
     display: flex;
     align-items: center;
     gap: 1rem;
+    background-color: var(--light_pink);
+    margin-bottom: 2em;
+    overflow: hidden;
 }
 .post1, .post2, .post3 {
     display: none;
+    background-color: var(--light_pink);
+    overflow: hidden;
 }
+
 .posts img {
     width: 44px;
     height: auto;

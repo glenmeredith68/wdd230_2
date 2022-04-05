@@ -22,25 +22,38 @@ outputSpan.textContent = year;
 
 const leftBtn = document.querySelector('.left-btn');
 const rightBtn = document.querySelector('.right-btn');
-const post1 = document.querySelector('.post1');
-const post2 = document.querySelector('.post2');
-const post3 = document.querySelector('.post3');
-const posts = [post1, post2, post3];
+const post0 = document.querySelector('.post1');
+const post1 = document.querySelector('.post2');
+const post2 = document.querySelector('.post3');
+const posts = [post0, post1, post2];
 
-let clickNum = 1;
-let displayedPost = posts[1];
+let clickNum = 0;
+let displayedPost = posts[0];
 displayedPost.style.display = 'block';
 
 
 
 
 leftBtn.addEventListener('click', () => {
-    
-    let postNum = Math.abs((clickNum % 3)) + 1;
-    clickNum++;
-    console.log(postNum);
+    clickNum--;
+    let postNum = Math.abs((clickNum % 3)) ;
 
+    let oldDisplay;
+    oldDisplay = displayedPost;
+    oldDisplay.style.display = 'none';
     displayedPost = posts[postNum];
+    displayedPost.style.display = 'block';
 
 
+})
+
+rightBtn.addEventListener('click', () => {
+    clickNum++;
+    let postNum = Math.abs((clickNum % 3));
+
+    let oldDisplay;
+    oldDisplay = displayedPost;
+    oldDisplay.style.display = 'none';
+    displayedPost = posts[postNum];
+    displayedPost.style.display = 'block';
 })
