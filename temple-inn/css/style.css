@@ -99,7 +99,7 @@ nav {
     border-top: 1px solid var(--light_pink);
 }
 
-ul {
+nav ul {
     list-style-type: none;
     padding-left: 0;
     font-family: 'Quicksand', sans-serif;
@@ -181,11 +181,15 @@ main {
 .hero-img * {
     max-width: 100%;
     height: auto;
+    box-shadow: 1px 1px 5px black;
 }
 
-/* .book-today-a {
-    display: run-in;
-} */
+.book-today-a {
+    cursor: default;
+    width: fit-content;
+    margin-left: 0;
+    margin-right: 0;
+}
 
 .book-today {
     width: 90%;
@@ -199,6 +203,13 @@ main {
     align-items: center;
     font-size: 1.5em;
     margin-top: .3em;
+}
+.book-today:hover {
+    box-shadow: 1px 1px 5px var(--blue_navy);
+    color: var(--dark_pink);
+    background-color: var(--light_pink);
+    border: 3px solid var(--dark_pink);
+    cursor:pointer;
 }
 
 .featured-temple {
@@ -231,6 +242,16 @@ main {
     margin-top: 7px;
     width: 97.35px;
     background-color: var(--yellow);
+    justify-content: center;
+}
+.weather-icon {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+.weather-icon img {
+    max-width: 100%;
+    height: auto;
 }
 
 .tiny {
@@ -238,11 +259,15 @@ main {
     margin-bottom: -5px;
 }
 
+.bottom-grid {
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
 .follow {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 3em;
 }
 
 .follow-links {
@@ -300,9 +325,13 @@ main {
     align-items: center;
     gap: 1rem;
     background-color: var(--light_pink);
-    margin-bottom: 2em;
     overflow: hidden;
 }
+
+.left-btn, .right-btn {
+    display: none;
+}
+
 .post1, .post2, .post3 {
     display: none;
     background-color: var(--light_pink);
@@ -313,6 +342,11 @@ main {
     width: 44px;
     height: auto;
 }
+
+.why-stay {
+    display: none;
+}
+
 .happy-wrap {
     position: relative;
 }

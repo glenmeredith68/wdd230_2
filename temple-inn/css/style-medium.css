@@ -8,4 +8,25 @@
     .banner div {
         width: 100%
     }
+
+    .left-btn, .right-btn {
+        display: block;
+    }
+
+}
+@media only screen and (min-width:46.75em) {
+    .why-stay {
+        display: block;
+        width: 32vw;
+    }
+    .why-stay ul {
+        padding-left: 0;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 2.2em;
+    }
+    .bottom-grid {
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+    }
 }
