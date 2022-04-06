@@ -2,6 +2,7 @@
     "temples": [
         {
             "name": "Portland, Oregon Temple",
+            "id":"por",
             "img": "images/temples/portland-350.webp",
             "address1": "13600 Kruse Oaks Blvd",
             "address2": "Lake Oswego OR 97035",
@@ -27,6 +28,7 @@
         },
         {
             "name": "Oakland, California Temple",
+            "id":"oak",
             "img": "images/temples/oakland-350.webp",
             "address1": "4770 Lincoln Ave",
             "address2": "Oakland CA 94602",
@@ -50,6 +52,7 @@
         },
         {
             "name": "Kansas City, Missouri Temple",
+            "id":"kc",
             "img": "images/temples/kc-350.webp",
             "address1": "7001 Searcy Creek Pkwy",
             "address2": "Kansas City MO 64119",
@@ -71,6 +74,7 @@
         },
          {
             "name": "Louisville, Kentucky Temple",
+            "id":"lou",
             "img": "images/temples/louisville-350.webp",
             "address1": "7116 West Hwy 22",
             "address2": "Crestwood KY 40014",

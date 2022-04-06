@@ -16,33 +16,64 @@ font-family: 'Quicksand', sans-serif; */
     margin-bottom: 3em;
     justify-content: center;
 }
+
 .temples section {
     padding: 1em;
 }
+
+.card-title {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.card-title img {
+    width: 30px;
+    height: auto;
+    grid-column: 3 / 4;
+}
+
+.temple-pic {
+    border: 0px solid black;
+    border-radius: 5px;
+}
+
+.temple-pic:hover {
+    box-shadow: 1px 1px 5px var(--blue_navy);
+}
+
 .details {
     display: none;
 }
+
 .details>* {
     font-weight: 800;
 }
-.details>*>*{
+
+.details>*>* {
     font-weight: 400;
 }
+
 .details-btn {
     display: inline-block;
 }
+
 .details-btn:hover {
     color: var(--blue_navy);
     text-decoration: underline;
 }
+
 .show {
     display: block;
 }
+
 .outline {
     border: 3px solid var(--blue_navy);
     border-radius: 1rem;
     z-index: 5;
 }
+
 .heavy {
     font-weight: 800;
 }
@@ -52,10 +83,8 @@ font-family: 'Quicksand', sans-serif; */
     flex-direction: column;
     align-items: flex-start;
 }
-.address, .phone {
+
+.address,
+.phone {
     margin-bottom: .5rem;
 }
-.address:hover, .phone:hover {
-    text-decoration: underline;
-}
-

@@ -397,7 +397,10 @@ footer {
     margin-top: 1em;
 }
 
+.address:hover, .phone:hover, .email:hover {
+    text-decoration: underline;
 
+}
 
 .footer-social-wrapper {
     display: flex;
