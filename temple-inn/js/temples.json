@@ -1,0 +1,94 @@
+{
+    "temples": [
+        {
+            "name": "Portland, Oregon Temple",
+            "img": "images/temples/portland-350.webp",
+            "address1": "13600 Kruse Oaks Blvd",
+            "address2": "Lake Oswego OR 97035",
+            "addressurl": "https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=portland-oregon-temple",
+            "phone": "503-639-7066",
+            "history": ["Announced: 7 April 1984", "Groundbreaking: 20 September 1986", "Dedicated: 19 August 1989"],
+            "services": {
+                "clothing": "Yes",
+                "cafeteria": "No",
+                "distribution": "Yes"
+            },
+            "ordinance": "By Appointment",
+            "session": "By Appointment",
+            "closures": ["Monday, 4 July 2022",
+                "Monday, 18 July 2022 - Monday, 15 August 2022",
+                "Saturday, 1 October 2022",
+                "Wednesday, 23 November 2022 (Limited Operations)",
+                "Thursday, 24 November 2022",
+                "Saturday, 24 December 2022",
+                "Sunday, 25 December 2022",
+                "Saturday, 31 December 2022"
+            ]
+        },
+        {
+            "name": "Oakland, California Temple",
+            "img": "images/temples/oakland-350.webp",
+            "address1": "4770 Lincoln Ave",
+            "address2": "Oakland CA 94602",
+            "addressurl": "https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=oakland-california-temple",
+            "phone": "510-531-3200",
+            "history": ["Announced: 23 January 1961", "Groundbreaking: 26 May 1962", "Dedicated: 17 November 1964", "Rededicated: 16 June 2019"],
+            "services": {
+                "clothing": "Yes",
+                "cafeteria": "No",
+                "distribution": "Yes"
+            },
+            "ordinance": "By Appointment",
+            "session": "By Appointment",
+            "closures": ["Monday, 5 September 2022 - Monday, 19 September 2022",
+                "Saturday, 1 October 2022",
+                "Wednesday, 23 November 2022 (Limited Operations)",
+                "Thursday, 24 November 2022",
+                "Saturday, 24 December 2022",
+                "Saturday, 31 December 2022"
+            ]
+        },
+        {
+            "name": "Kansas City, Missouri Temple",
+            "img": "images/temples/kc-350.webp",
+            "address1": "7001 Searcy Creek Pkwy",
+            "address2": "Kansas City MO 64119",
+            "addressurl": "https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=kansas-city-missouri-temple",
+            "phone": "816-413-1430",
+            "history": ["Announced: 4 October 2008", "Groundbreaking: 8 May 2010", "Dedicated: 6 May 2012"],
+            "services": {
+                "clothing": "Yes",
+                "cafeteria": "No",
+                "distribution": "No"
+            },
+            "ordinance": "By Appointment",
+            "session": "By Appointment",
+            "closures": ["Monday, 18 April 2022 - Monday, 25 April 2022",
+                "Tuesday, 21 June 2022 (Limited Operations)",
+                "Monday, 19 September 2022 - Monday, 19 December 2022",
+                "Saturday, 24 December 2022"
+            ]
+        },
+         {
+            "name": "Louisville, Kentucky Temple",
+            "img": "images/temples/louisville-350.webp",
+            "address1": "7116 West Hwy 22",
+            "address2": "Crestwood KY 40014",
+            "addressurl": "https://www.churchofjesuschrist.org/temples/map?lang=eng&templeName=louisville-kentucky-temple",
+            "phone": "502-241-4115",
+            "history": ["Announced: 17 March 1999", "Groundbreaking: 29 May 1999", "Dedicated: 19 March 2000"],
+            "services": {
+                "clothing": "No",
+                "cafeteria": "No",
+                "distribution": "No"
+            },
+            "ordinance": "By Appointment",
+            "session": "By Appointment",
+            "closures": ["Monday, 11 April 2022 - Monday, 25 April 2022",
+                "Saturday, 1 October 2022",
+                "Monday, 10 October 2022 - Monday, 24 October 2022", "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
+                "Saturday, 24 December 2022", "Saturday, 31 December 2022"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+/* font-family: 'Great Vibes', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Quicksand', sans-serif; */
+
+:root {
+    --dark_pink: #e9584d;
+    --light_pink: #f9ebe3;
+    --blue_navy: #273741;
+    --yellow: #e8cb99;
+}
+
+
+
+.details {
+    display: none;
+}
+.details-btn:hover {
+    color: var(--blue_navy);
+    text-decoration: underline;
+    display: inline-block;
+}
+.show {
+    display: block;
+}
