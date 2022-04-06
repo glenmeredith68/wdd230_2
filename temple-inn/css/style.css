@@ -168,6 +168,10 @@ nav ul li {
     border-bottom: .5em solid var(--blue_navy);
 }
 
+.drop li a {
+    color: var(--light_pink);
+}
+
 
 main {
     padding: 5%;
@@ -204,18 +208,20 @@ main {
     font-size: 1.5em;
     margin-top: .3em;
 }
+
 .book-today:hover {
     box-shadow: 1px 1px 5px var(--blue_navy);
     color: var(--dark_pink);
     background-color: var(--light_pink);
     border: 3px solid var(--dark_pink);
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .top-grid {
     margin: 1em;
     margin-bottom: 3em;
 }
+
 .top-grid p {
     line-height: 2.2em;
     max-width: 430px;
@@ -226,6 +232,12 @@ main {
     flex-direction: column;
     justify-content: center;
 }
+
+.featured-temple div picture img {
+    max-width: 100%;
+    height: auto;
+}
+
 .tip {
     display: none;
 }
@@ -258,11 +270,13 @@ main {
     justify-content: center;
     box-shadow: 1px 1px 5px var(--blue_navy);
 }
+
 .weather-icon {
     display: flex;
     max-width: 100%;
     height: auto;
 }
+
 .weather-icon img {
     max-width: 100%;
     height: auto;
@@ -343,11 +357,14 @@ main {
     overflow: hidden;
 }
 
-.left-btn, .right-btn {
+.left-btn,
+.right-btn {
     display: none;
 }
 
-.post1, .post2, .post3 {
+.post1,
+.post2,
+.post3 {
     display: none;
     background-color: var(--light_pink);
     overflow: hidden;
@@ -384,6 +401,7 @@ main {
     font-family: 'Great Vibes', cursive;
     font-size: 1.7em;
 }
+
 footer {
     padding-left: 1em;
     padding-bottom: 1em;
@@ -397,7 +415,9 @@ footer {
     margin-top: 1em;
 }
 
-.address:hover, .phone:hover, .email:hover {
+.address:hover,
+.phone:hover,
+.email:hover {
     text-decoration: underline;
 
 }

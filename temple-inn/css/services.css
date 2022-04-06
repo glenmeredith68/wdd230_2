@@ -1,0 +1,50 @@
+/* font-family: 'Great Vibes', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Quicksand', sans-serif; */
+
+:root {
+    --dark_pink: #e9584d;
+    --light_pink: #f9ebe3;
+    --blue_navy: #273741;
+    --yellow: #e8cb99;
+}
+
+.services-wrapper {
+    margin: 3rem;
+    line-height: 2.2rem;
+}
+
+.services-wrapper img {
+    border: 0px solid black;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    margin-bottom: 1rem;
+}
+
+.kids-wrapper,
+.more-wrapper {
+    display: grid;
+    grid-template-columns: 500px auto;
+    margin-bottom: 3rem;
+}
+
+.parents-wrapper {
+    display: grid;
+    grid-template-columns: auto 500px;
+    margin-bottom: 3rem;
+}
+
+.parents {
+    grid-column: 2 / 3;
+}
+
+.more a {
+    text-decoration: underline;
+}
+
+.more a:hover {
+    color: var(--blue_navy);
+}

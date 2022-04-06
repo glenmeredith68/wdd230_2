@@ -112,13 +112,11 @@ fetch(path)
             // heart btn
             let unliked = true;
             let likedInPast = localStorage.getItem(`${temple.id} liked`);
-            console.log(temple.name + likedInPast);
             if (likedInPast != null) {
 
                 heart.setAttribute('src', localStorage.getItem(`${temple.id} liked src`));
                 heart.setAttribute('alt', localStorage.getItem(`${temple.id} liked alt`));
             } else {
-                console.log('it\'s null');
                 heart.setAttribute('src', 'images/social/heart-empty.png');
                 heart.setAttribute('alt', 'You can like this temple');
             }
@@ -141,43 +139,3 @@ fetch(path)
         });
 
     })
-
-// let temples = ['Portland, Oregon Temple', 'Oakland, California Temple', 'Kansas City, Missouri Temple', 'Louisville, Kentucky Temple'];
-
-// let heart = document.querySelector('.heart');
-// let unliked = true;
-// for (let i = 0; i < temples.length; i++){
-
-
-
-
-// let likedInPast = localStorage.getItem(`${temples[i]} liked`);
-// console.log(temples[i] + likedInPast);
-// window.addEventListener('load', () => {
-//     console.log('loaded');
-//     if (likedInPast != null) {
-
-//         heart.setAttribute('src', localStorage.getItem(`${temples[i]} liked src`));
-//         heart.setAttribute('alt', `${temples[i]} liked alt`);
-//     } else {
-//         console.log('it\'s null');
-//         heart.setAttribute('src', 'images/social/heart-empty.png');
-//         heart.setAttribute('alt', 'You can like this temple');
-//     }
-// })
-// heart.addEventListener('click', () => {
-//     if (unliked) {
-//         heart.setAttribute('src', 'images/social/heart-full.png');
-//         heart.setAttribute('alt', 'You like this temple');
-//         localStorage.setItem(`${temples[i]} liked`, 'yes');
-//         localStorage.setItem(`${temples[i]} liked src`, 'images/social/heart-full.png');
-//         localStorage.setItem(`${temples[i]} liked alt`, 'You like this temple');
-//     } else {
-//         heart.setAttribute('src', '../images/social/heart-empty.png');
-//         heart.setAttribute('alt', 'You can like this temple');
-//         localStorage.setItem(`${temple[i]} liked`, 'no');
-//         localStorage.setItem(`${temple[i]} liked src`, 'images/social/heart-empty.png');
-//         localStorage.setItem(`${temple[i]} liked alt`, 'You can like this temple');
-//     }
-//     unliked = !unliked;
-// })}
