@@ -1,11 +1,8 @@
-const url ='https://api.openweathermap.org/data/2.5/onecall?lat=45.401&lon=-122.744&appid=33e2cecc8554b0c274a39f67cb50d0db&units=imperial';
+const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=45.401&lon=-122.744&appid=33e2cecc8554b0c274a39f67cb50d0db&units=imperial';
 
 fetch(url)
     .then(response => response.json()
         .then(weather => {
-            console.log(weather);
-            console.table(weather);
-
             // this is for the 5 day forecast
             let day1Img = document.querySelector('.day1-img');
             let day1Temp = document.querySelector('.day1-temp');
@@ -46,9 +43,19 @@ fetch(url)
 
                 dayNameP.textContent = dayName;
             }
-
             // this is for the banner alerts
+            if (weather['alerts']) {
+                let bannerText = document.querySelector('.weather-alert');
+                let banner = document.querySelector('.banner');
+                let xBtn = document.querySelector('.x');
 
-            
+                bannerText.textContent = weather.alerts.event + 'in Portland today.';
 
-        }))
+                xBtn.addEventListener('click', () => {
+                    banner.style.display = 'none';
+                });
+            } else {
+                    let banner = document.querySelector('.banner');
+                    banner.style.display = 'none';
+                }
+        }));

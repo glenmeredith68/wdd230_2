@@ -2,11 +2,16 @@
     main {
         padding-bottom: 3%;
     }
+    .banner div {
+        flex-direction: row;
+    }
+    .banner div * {
+        margin: 0 1em;
+    }
     .tip {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-
     }
     .top-grid {
         display: flex;
