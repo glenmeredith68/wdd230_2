@@ -9,16 +9,53 @@ font-family: 'Quicksand', sans-serif; */
     --yellow: #e8cb99;
 }
 
-
-
+.temples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 350px);
+    gap: 3em;
+    margin-bottom: 3em;
+    justify-content: center;
+}
+.temples section {
+    padding: 1em;
+}
 .details {
     display: none;
+}
+.details>* {
+    font-weight: 800;
+}
+.details>*>*{
+    font-weight: 400;
+}
+.details-btn {
+    display: inline-block;
 }
 .details-btn:hover {
     color: var(--blue_navy);
     text-decoration: underline;
-    display: inline-block;
 }
 .show {
     display: block;
 }
+.outline {
+    border: 3px solid var(--blue_navy);
+    border-radius: 1rem;
+    z-index: 5;
+}
+.heavy {
+    font-weight: 800;
+}
+
+.address * {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.address, .phone {
+    margin-bottom: .5rem;
+}
+.address:hover, .phone:hover {
+    text-decoration: underline;
+}
+
