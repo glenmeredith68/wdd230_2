@@ -89,6 +89,10 @@ header {
     justify-content: flex-start;
 }
 
+.logo-title * {
+    margin: 0;
+}
+
 #header-logo {
     width: 75px;
     height: auto;
@@ -103,6 +107,7 @@ nav ul {
     list-style-type: none;
     padding-left: 0;
     font-family: 'Quicksand', sans-serif;
+    font-size: .9rem;
 }
 
 nav ul li:hover {
@@ -447,4 +452,15 @@ footer {
 
 .footer-bottom {
     display: block;
+}
+@media only screen and (min-width:390px) {
+    nav ul {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:350px){
+    nav ul {
+        font-size: .8rem;
+    }
 }
