@@ -176,7 +176,9 @@ nav ul li {
 .drop li a {
     color: var(--light_pink);
 }
-
+.drop li.active a:hover {
+    color: var(--blue_navy);
+}
 
 main {
     padding: 5%;
