@@ -249,6 +249,11 @@ main {
     display: none;
 }
 
+.tip img, .featured-temple img {
+    border: 0px solid black;
+    border-radius: 5px;
+}
+
 .weather-in {
     border: 3px solid transparent;
     border-image: linear-gradient(135deg, var(--blue_navy), var(--dark_pink));
